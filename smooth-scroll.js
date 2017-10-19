@@ -27,14 +27,14 @@
 					e.stopPropagation();
 					e.preventDefault();
 
-					var targetBCT = target[0].getBoundingClientRect();
+					var targetBCT = target.getBoundingClientRect();
 					var st = $(document).scrollTop();
 
 					window.location.hash = '#' + targetId; // Bump :target
 
 					$(document).scrollTop(st);
 
-					$('html, body').animate({scrollTop: targetBCT.top + config.offset}, config.duration);
+					$('html, body').animate({scrollTop: targetBCT.top + st + config.offset}, config.duration);
 				});
 			}
 			else if (targetId == 'top') {
