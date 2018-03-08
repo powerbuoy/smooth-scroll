@@ -1,1 +1,1 @@
-Smoothly scroll in page links
+Smoothly scroll in page links.
